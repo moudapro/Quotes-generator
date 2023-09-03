@@ -12,10 +12,10 @@ async function getQuotes(){
    author.textContent='loading...'
    let resp = await fetch("https://api.api-ninjas.com/v1/quotes?category=age",options)
    let data = await resp.json()
+   quote.textContent=data[0].quote
+   author.textContent=data[0].author
    localStorage.setItem('quote',data[0].quote)
    localStorage.setItem('author',data[0].author)
-   quote.textContent=localStorage.getItem('quote')
-   author.textContent=localStorage.getItem('author')
 }
 window.addEventListener('load',()=>{
     quote.textContent=localStorage.getItem('quote')
