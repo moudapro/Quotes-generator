@@ -1,0 +1,27 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(156, 235, 156),rgb(106, 235, 106));
+    font-family: 'IBM Plex Mono', monospace;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(122, 238, 122);
+    box-shadow: 1px 1px 1px 1px black;
+    text-align: center;
+}
+.container .quote{
+    font-size: 20px;
+}
+.container .author{
+    font-size: 17px;
+    color: rgb(26, 25, 25);
+}
+#btn{
+    padding: 5px 15px;
+    background-color: rgb(176, 238, 176);
+    border: 1px rgb(190, 233, 190) solid ;
+    cursor: pointer;
+    text-transform: capitalize;
+}
